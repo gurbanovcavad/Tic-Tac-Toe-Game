@@ -181,10 +181,6 @@ int heuristic_evaluation(vector<vector<char>> board) {
         // evaluate potential wins or near wins
         if (x_count == k) return 10;   // X wins this line
         if (o_count == k) return -10;  // O wins this line
-        if (x_count == k - 1 && empty_count == 1) return 5;  // X is about to win
-        if (o_count == k - 1 && empty_count == 1) return -5; // O is about to win
-        if (x_count == k - 2 && empty_count == 2) return 3;  // X has 2 empty spots to complete
-        if (o_count == k - 2 && empty_count == 2) return -3; // O has 2 empty spots to complete
 
         return 0;
     };
@@ -347,10 +343,10 @@ void test_heuristic_evaluation() {
     vector<vector<char>> board = initial_state();
     board[1][1] = 'X';
     board[1][2] = 'X';
-    board[1][3] = '.';
+    board[1][3] = 'X';
     turn = 1;
     int heuristic_score = heuristic_evaluation(board);
-    assert(heuristic_score == 14);
+    assert(heuristic_score == 10);
     cout << "Test passed: heuristic_evaluation\n";
 }
 

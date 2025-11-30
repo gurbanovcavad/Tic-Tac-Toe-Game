@@ -402,6 +402,12 @@ int32_t main() {
     test_draw_scenario();
     test_search_function();
 
-    // to run the functions for different states you could use initial_state() function by providing it with m and k or by creating the state manually (don't forget to change global m and k variables)
+    /*
+        to run the functions for different 
+        states you could use initial_state()
+        function by providing it with m and k 
+        or by creating the state manually (don't forget to change global m and k 
+        variables)
+    */
     return 0;
 }

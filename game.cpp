@@ -280,7 +280,11 @@ int search(vector<vector<char>> board, int depth, int max_depth) {
 // tests
 void test_initial_state() {
     vector<vector<char>> board = initial_state();
-    assert(board[1][1] == '.' && board[3][3] == '.');
+    for(int i = 1; i <= m; i++) {
+        for(int j = 1; j <= m; j++) {
+            assert(board[i][j] == '.');
+        }
+    }
     cout << "Test passed: initial_state\n";
 }
 

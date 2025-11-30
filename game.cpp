@@ -382,7 +382,7 @@ void test_search_function() {
     int max_depth = 3;
     turn = 1;  // X's turn
     int minimax_dls_result = search(board, 0, max_depth);
-    cout << "Test passed: minimax_dls with max depth " << max_depth << "\n";
+    cout << "Test passed: search function with max depth " << max_depth << "\n";
 }
 
 int32_t main() {

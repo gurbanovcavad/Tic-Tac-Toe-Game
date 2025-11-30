@@ -64,11 +64,4 @@ As the grid size and depth increase, the complexity grows exponentially. For exa
   - Depth 3: \( O(16^3) = 4,096 \) nodes
   - Depth 5: \( O(16^5) = 1,048,576 \) nodes
 
-- For larger grids or deeper searches, the problem becomes computationally prohibitive.
-
-### 4. **Limitations**
-
-- **Minimax vs Alpha-Beta**: Alpha-Beta pruning significantly reduces the search space, making it more efficient.
-- **Heuristic Evaluation**: Helps approximate board utility faster but doesn't fully replace exhaustive search.
-- **Grid Size/Depth**: As grid size or search depth increases, the game becomes computationally intractable. Hybrid approaches (e.g., MCTS or neural networks) may be needed for larger grids.
 
